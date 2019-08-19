@@ -29,7 +29,7 @@ $ npm i egg-xss --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.jwt = {
+exports.xss = {
   enable: true,
   package: "egg-xss"
 };
