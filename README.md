@@ -40,11 +40,10 @@ exports.jwt = {
 ```js
 // {app_root}/config/config.default.js
 'use strict';
-config.xss = {
-  enable: true,
-  // match和ignore不能同时使用
-  match: '/login',
-};
+ config.xss = {
+    enable: true,
+    match: [ '/test', '/login' ],
+  };
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
