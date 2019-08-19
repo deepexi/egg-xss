@@ -7,7 +7,7 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-xss.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/egg-xss
-[travis-image]: https://img.shields.io/travis/deepexi/egg-xss.svg?style=flat-square
+[travis-image]: https://travis-ci.org/deepexi/egg-xss.svg?branch=master
 [travis-url]: https://travis-ci.org/deepexi/egg-xss
 [codecov-image]: https://img.shields.io/codecov/c/gh/deepexi/egg-xss.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/deepexi/egg-xss
