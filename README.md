@@ -3,25 +3,25 @@
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
-![npm](https://img.shields.io/npm/dw/@jackyhweng/egg-jwt)
+![npm](https://img.shields.io/npm/dw/egg-xss)
 
 [npm-image]: https://img.shields.io/npm/v/egg-xss.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/egg-xss
-[travis-image]: https://img.shields.io/travis/deepexi/egg-jwt2.svg?style=flat-square
-[travis-url]: https://travis-ci.org/deepexi/egg-jwt2
-[codecov-image]: https://img.shields.io/codecov/c/gh/deepexi/egg-jwt2.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/deepexi/egg-jwt2
-[download-image]: https://img.shields.io/npm/dw/@jackyhweng/egg-jwt
-[download-url]: https://www.npmjs.com/package/@jackyhweng/egg-jwt
+[npm-url]: https://www.npmj1s.com/package/egg-xss
+[travis-image]: https://img.shields.io/travis/deepexi/egg-xss.svg?style=flat-square
+[travis-url]: https://travis-ci.org/deepexi/egg-xss
+[codecov-image]: https://img.shields.io/codecov/c/gh/deepexi/egg-xss.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/deepexi/egg-xss
+[download-image]: https://img.shields.io/npm/dw/egg-xss
+[download-url]: https://www.npmjs.com/package/egg-xss
 
 
 
-Deepexi Egg's JWT(JSON Web Token Authentication Plugin)
+Egg's XSS
 
 ## Install
 
 ```bash
-$ npm i @jackyhweng/egg-jwt --save
+$ npm i egg-xss --save
 ```
 
 
@@ -31,7 +31,7 @@ $ npm i @jackyhweng/egg-jwt --save
 // {app_root}/config/plugin.js
 exports.jwt = {
   enable: true,
-  package: "@jackyhweng/egg-jwt"
+  package: "egg-xss"
 };
 ```
 
@@ -40,10 +40,10 @@ exports.jwt = {
 ```js
 // {app_root}/config/config.default.js
 'use strict';
-exports.jwt = {
+config.xss = {
   enable: true,
   // match和ignore不能同时使用
-  match: '/login/1',
+  match: '/login',
 };
 ```
 
@@ -57,8 +57,6 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 module.exports = app => {
   app.get('/test',app.controller.test.index);
- // if you want use middleware
-  app.get('/test',app.middleware.jwt(),app.controller.test.index);
 };
 ```
 
